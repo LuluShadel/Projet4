@@ -1,0 +1,23 @@
+*{
+    font-family: 'roboto', sans-serif;
+}
+
+$main-color : #9356DC;
+$second-color: #FF79DA ;
+$third-color : #99E2D0; 
+
+header{
+    display: flex;
+    
+    .logo{
+        margin: auto;
+    }
+}
+
+.logo{
+    margin: auto;
+}
+
+p{
+    color: red;
+}
