@@ -1,0 +1,18 @@
+* {
+  font-family: "roboto", sans-serif;
+}
+
+header {
+  display: flex;
+}
+header .logo {
+  margin: auto;
+}
+
+.logo {
+  margin: auto;
+}
+
+p {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
