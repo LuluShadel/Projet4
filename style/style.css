@@ -1,6 +1,17 @@
 * {
   font-family: "roboto", sans-serif;
   margin: 0;
+  font-weight: normal;
+}
+
+.main {
+  box-sizing: content-box;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -56,7 +67,7 @@ p {
 }
 
 .fonctionnement h2 {
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 20px;
   margin-bottom: 40px;
 }
@@ -98,4 +109,68 @@ p {
 .fonctionnement_content--box--text {
   padding: 20px;
   margin-left: 60px;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+}
+.restaurant h2 {
+  margin: 30px;
+  padding-top: 50px;
+}
+.restaurant .restaurant_card {
+  width: 85%;
+  height: 17.5em;
+  margin: auto;
+}
+.restaurant .restaurant_card .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 11em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant .restaurant_card--content {
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant .restaurant_card--content--text {
+  margin: 15px 0px 20px 10px;
+}
+.restaurant .restaurant_card--content--text--subtitle {
+  margin-top: 5px;
+}
+.restaurant .restaurant_card--content--heart {
+  margin: 10px 20px 0px 0px;
+}
+
+footer {
+  background-color: #353535;
+}
+footer .footer_logo {
+  width: 8em;
+  height: 3em;
+  margin: 15px 0px 15px 20px;
+  filter: invert(100%);
+}
+footer .footer_content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+footer .footer_content a {
+  color: white;
+}
+footer .footer_content--text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer .footer_content--icon {
+  color: white;
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
