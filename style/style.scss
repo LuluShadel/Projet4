@@ -1,12 +1,25 @@
 *{
     font-family: 'roboto', sans-serif;
     margin: 0;
+    font-weight: normal;
+}
+
+.main{
+    box-sizing: content-box;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 $main-color : #9356DC;
 $second-color: #FF79DA ;
 $third-color : #99E2D0; 
 $background-color : #F6F6F6;
+$footer-color :#353535;
+
 
 header{
     display: flex;
@@ -65,7 +78,7 @@ p{
 .fonctionnement {
 
     h2{
-        margin-top: 50px;
+        margin-top: 80px;
         margin-left: 20px;
         margin-bottom: 40px;
     }
@@ -111,3 +124,73 @@ p{
     
 }
 
+.restaurant{
+    background-color: $background-color;
+    h2{
+        margin: 30px;
+        padding-top: 50px;
+    }
+
+    .restaurant_card{
+        
+        width: 85%;
+        height: 17.5em;
+        margin: auto;       
+
+        .image{
+            object-fit: cover;
+            width: 100%;
+            height: 11em;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            
+        }
+        &--content{
+            background-color: white;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            &--text{
+                margin: 15px 0px 20px 10px;
+                &--subtitle{
+                    margin-top: 5px;
+                } 
+            }
+            &--heart{
+                margin:10px 20px 0px 0px;
+            }
+        }
+        
+    }
+}
+
+
+footer{
+    background-color: $footer-color;
+
+    .footer_logo{
+        width: 8em;
+        height: 3em;
+        margin: 15px 0px 15px 20px;
+        filter: invert(100%);
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        a{
+            color: white;
+        }
+        &--text{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        &--icon{
+            color: white;
+            margin-right: 10px;
+        }
+    }
+
+}
