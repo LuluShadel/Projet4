@@ -66,21 +66,30 @@ p {
   cursor: pointer;
 }
 
+.fonctionnement {
+  margin-left: 20px;
+}
 .fonctionnement h2 {
   margin-top: 80px;
-  margin-left: 20px;
   margin-bottom: 40px;
+}
+@media (min-width: 967px) {
+  .fonctionnement h2 {
+    margin-left: 70px;
+  }
 }
 .fonctionnement_content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .fonctionnement_content--box {
   background-color: #F6F6F6;
   border-radius: 20px;
   width: 21em;
   height: 4.5em;
-  margin: 0px 0px 20px 40px;
+  margin-bottom: 20px;
+  margin-right: 30px;
   display: flex;
   position: relative;
   box-shadow: rgba(50, 50, 93, 0) 0px 5px 20px 0px, rgba(0, 0, 0, 0.3) -1px 5px 30px -10px;
@@ -115,13 +124,32 @@ p {
   background-color: #F6F6F6;
 }
 .restaurant h2 {
-  margin: 30px;
+  padding-bottom: 50px;
   padding-top: 50px;
+  margin-left: 20px;
+}
+@media (min-width: 967px) {
+  .restaurant h2 {
+    margin-left: 90px;
+  }
+}
+@media (min-width: 967px) {
+  .restaurant .restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
 }
 .restaurant .restaurant_card {
   width: 85%;
   height: 17.5em;
   margin: auto;
+}
+@media (min-width: 967px) {
+  .restaurant .restaurant_card {
+    width: 40%;
+  }
 }
 .restaurant .restaurant_card .image {
   -o-object-fit: cover;
@@ -157,10 +185,21 @@ footer .footer_logo {
   margin: 15px 0px 15px 20px;
   filter: invert(100%);
 }
+@media (min-width: 967px) {
+  footer .footer_logo {
+    margin-right: 50px;
+  }
+}
 footer .footer_content {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+}
+@media (min-width: 967px) {
+  footer .footer_content {
+    flex-direction: row;
+    margin-right: 40px;
+  }
 }
 footer .footer_content a {
   color: white;
@@ -170,7 +209,18 @@ footer .footer_content--text {
   align-items: center;
   margin-bottom: 10px;
 }
+@media (min-width: 967px) {
+  footer .footer_content--text {
+    margin-right: 20px;
+  }
+}
 footer .footer_content--icon {
   color: white;
   margin-right: 10px;
+}
+@media (min-width: 967px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */
