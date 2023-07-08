@@ -62,18 +62,26 @@ p{
 .btn {
     margin-top: 40px;
     padding-bottom: 50px;
-    text-align: center;
-    &_gradient_round{
+    text-align: center;}
+.btn_gradient_round{
         border-radius: 30px;
         padding: 15px;
-        background: linear-gradient(to bottom right,$second-color,$main-color);
+        background:linear-gradient(to bottom right,$second-color,$main-color);
         color: white;
         border: none;
         box-shadow: 2px 2px 4px grey;
         cursor: pointer;
-    }
+        &:hover{
+            background: linear-gradient(
+  356deg,
+  lighten($main-color, 5%) 0%,
+  lighten($second-color, 5%)80%,
+);
+        }
+        
+        }
+    
 
-}
 
 .fonctionnement {
     margin-left: 20px;
