@@ -292,4 +292,46 @@ p {
   flex-direction: row;
   justify-content: space-between;
   padding: 3px;
+}
+
+/*** animation apparition menu ****/
+.menu_card {
+  animation: menu 1500ms backwards;
+}
+.menu_card--1 {
+  animation-delay: 150ms;
+}
+.menu_card--2 {
+  animation-delay: 300ms;
+}
+.menu_card--3 {
+  animation-delay: 450ms;
+}
+.menu_card--4 {
+  animation-delay: 600ms;
+}
+.menu_card--5 {
+  animation-delay: 750ms;
+}
+.menu_card--6 {
+  animation-delay: 900ms;
+}
+.menu_card--7 {
+  animation-delay: 1050ms;
+}
+.menu_card--8 {
+  animation-delay: 1200ms;
+}
+.menu_card--9 {
+  animation-delay: 1350ms;
+}
+.menu_card--10 {
+  animation-delay: 1500ms;
+}
+
+@keyframes menu {
+  0% {
+    transform: translate(0, 100px);
+    opacity: -1;
+  }
 }/*# sourceMappingURL=style_main.css.map */

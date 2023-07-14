@@ -1,0 +1,21 @@
+
+/*** animation apparition menu ****/
+
+.menu_card{
+    animation: menu 1500ms backwards;
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation-delay: (1500ms/10) * $i;
+}
+    }
+}
+
+@keyframes menu {
+
+    0%{
+        transform: translate(0,100px);
+        opacity: -1;
+    }
+    
+}
+
