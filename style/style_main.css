@@ -240,6 +240,7 @@ p {
 .border_green {
   border-bottom: solid 3px #99E2D0;
   padding-bottom: 5px;
+  font-weight: lighter;
 }
 
 .menu_title {
@@ -333,5 +334,103 @@ p {
   0% {
     transform: translate(0, 100px);
     opacity: -1;
+  }
+}
+/***** animation loader*****/
+.loader {
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+  width: 100dvw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  animation: loader 3s forwards;
+  pointer-events: none;
+}
+
+.middle-dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: linear-gradient(#9356DC, #FF79DA);
+  transform-origin: center;
+  animation: rotate 2s ease forwards infinite;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.dot-1 {
+  left: -200px;
+  animation: slideleft 2s ease forwards infinite;
+}
+
+.dot-2 {
+  left: 200px;
+  top: -50px;
+  animation: slideright 2s ease forwards infinite;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slideleft {
+  0% {
+    background: #9356DC;
+    transform: translateX(0px);
+  }
+  25% {
+    background: #FF79DA;
+    transform: translateX(-100px);
+  }
+  50% {
+    background: #9356DC;
+    transform: translateX(0px);
+  }
+  100% {
+    background: #FF79DA;
+  }
+}
+@keyframes slideright {
+  0% {
+    background: #9356DC;
+    transform: translateX(0px);
+  }
+  25% {
+    background: #FF79DA;
+    transform: translateX(100px);
+  }
+  50% {
+    background: #9356DC;
+    transform: translateX(0px);
+  }
+  100% {
+    background: #FF79DA;
   }
 }/*# sourceMappingURL=style_main.css.map */
