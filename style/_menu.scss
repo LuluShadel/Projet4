@@ -4,6 +4,11 @@
     height: 18em;
 }
 
+.menu_header--title{
+    font-family: 'Shrikhand', cursive;
+    font-size: xx-large;
+}
+
 .border_green {
     border-bottom: solid 3px #99E2D0;
     padding-bottom: 5px;
@@ -39,9 +44,31 @@
 
         }
     }
-    .fa-heart{
+ 
+
+   .heart{
+    position: relative;
+    margin-right: 30px;
+    @media (min-width:967px) {
         margin-left: 20px;
+        
     }
+   }
+
+   .empty-heart{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+   }
+
+   .full-heart{
+    z-index: 1;
+    opacity: 0;
+   }
+
+
+
     &_card{
         background-color: white;
         border-radius: 20px;
