@@ -19,3 +19,123 @@
     
 }
 
+/***** animation loader*****/
+
+.loader {
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    width: 100dvw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0px;
+    animation: loader 3s forwards;
+    pointer-events: none;
+
+}
+
+.middle-dot{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient($main-color,$second-color);
+    transform-origin: center;
+    animation: rotate 2s ease forwards infinite
+}
+
+.dot{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+.dot-1{
+left: -200px;
+animation: slideleft 2s ease forwards infinite;
+
+}
+
+.dot-2{
+    left: 200px;
+    top:-50px;
+    animation: slideright 2s ease forwards infinite;
+}
+
+
+@keyframes loader {
+
+    0%{
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes rotate {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideleft {
+    0%{
+        background: $main-color;
+        transform: translateX(0px);
+    }
+    25%{
+        background: $second-color;
+        transform: translateX(-100px);
+    }
+    50%{
+        background: $main-color;
+        transform: translateX(0px);
+    }
+    100%{
+        background: $second-color;
+
+    }
+}
+
+@keyframes slideright {
+    0%{
+        background: $main-color;
+        transform: translateX(0px);
+    }
+    25%{
+        background: $second-color;
+        transform: translateX(100px);
+    }
+    50%{
+        background: $main-color;
+        transform: translateX(0px);
+    }
+    100%{
+        background: $second-color;
+
+    }
+}
+
+
+
+
+
