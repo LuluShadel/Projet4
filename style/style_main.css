@@ -237,6 +237,11 @@ p {
   height: 18em;
 }
 
+.menu_header--title {
+  font-family: "Shrikhand", cursive;
+  font-size: xx-large;
+}
+
 .border_green {
   border-bottom: solid 3px #99E2D0;
   padding-bottom: 5px;
@@ -278,8 +283,16 @@ p {
     justify-content: center;
   }
 }
-.menu .fa-heart {
+.menu .heart {
+  position: relative;
   margin-left: 20px;
+}
+.menu .fa-heart {
+  position: absolute;
+}
+.menu .full-heart {
+  opacity: 0;
+  top: -12px;
 }
 .menu_card {
   background-color: white;
@@ -287,6 +300,7 @@ p {
   padding: 10px;
   margin-top: 10px;
   box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.5);
+  display: flex;
 }
 .menu_card--content {
   display: flex;
@@ -368,12 +382,12 @@ p {
 }
 
 .dot-1 {
-  left: -200px;
+  left: -100px;
   animation: slideleft 2s ease forwards infinite;
 }
 
 .dot-2 {
-  left: 200px;
+  left: 100px;
   top: -50px;
   animation: slideright 2s ease forwards infinite;
 }
@@ -433,4 +447,26 @@ p {
   100% {
     background: #FF79DA;
   }
-}/*# sourceMappingURL=style_main.css.map */
+}
+/****** animation du coeur ****/
+.full-heart:hover {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  animation: fill-complete 500ms forwards;
+  line-height: 1;
+}
+
+@keyframes fill-complete {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/******animation slide vert *****//*# sourceMappingURL=style_main.css.map */

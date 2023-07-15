@@ -54,13 +54,13 @@
 }
 
 .dot-1{
-left: -200px;
+left: -100px;
 animation: slideleft 2s ease forwards infinite;
 
 }
 
 .dot-2{
-    left: 200px;
+    left: 100px;
     top:-50px;
     animation: slideright 2s ease forwards infinite;
 }
@@ -134,6 +134,44 @@ animation: slideleft 2s ease forwards infinite;
 
     }
 }
+
+
+/****** animation du coeur ****/ 
+
+
+.full-heart:hover{
+    
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient($main-color,$second-color);
+    animation: fill-complete 500ms forwards;
+    line-height: 1;
+   
+}
+
+
+
+@keyframes fill-complete {
+    0%{
+        opacity: 0;
+    }
+    50%{
+      
+        opacity: 0.5;
+        
+    }
+    100%{
+       
+        opacity: 1;
+        
+    }
+    
+}
+
+
+
+/******animation slide vert *****/
+
 
 
 
