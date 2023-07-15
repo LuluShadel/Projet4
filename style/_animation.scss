@@ -173,7 +173,40 @@ animation: slideleft 2s ease forwards infinite;
 /******animation slide vert *****/
 
 
+.menu_card--content:hover {
+    animation: decalagegauche .3s linear 0s 1 both;
+}
+
+.decalage{
+    display: flex;
+    margin-right:-66px;
+    animation: decalagedroite .3s linear 0s 1 both;
+    .prix{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: 500;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    } 
+}
 
 
+@keyframes decalagedroite {
+    from{
+        margin-right: 0;
+    }
+    to{
+        margin-right: -66px;
+    }
+}
 
-
+@keyframes decalagegauche {
+    from{
+        margin-right: -66px;
+    }
+    to{
+        margin-right: 0;
+    }
+}
