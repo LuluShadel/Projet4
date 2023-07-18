@@ -4,18 +4,23 @@
     font-weight: normal;
 }
 
-.main{
+$main-color : #9356DC;
+$second-color: #FF79DA ;
+$third-color : #99E2D0; 
+$background-color : #F6F6F6;
+$footer-color :#353535;
+
+.main-menu{
     box-sizing: content-box;
-    width: 100%;
+    background-color: #F6F6F6;
+    @media (min-width:967px) {
+        background-color: white;
+        margin-bottom: -40px;
+        
+    }
 }
 
 a{
     text-decoration: none;
     color: black;
 }
-
-$main-color : #9356DC;
-$second-color: #FF79DA ;
-$third-color : #99E2D0; 
-$background-color : #F6F6F6;
-$footer-color :#353535;

@@ -27,8 +27,8 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     @media (min-width:967px){
-        margin-left: 350px;
-        margin-right: 350px;
+        margin-left: 280px;
+        margin-right: 280px;
     }
 }
    .menu{
@@ -56,6 +56,7 @@
         display: flex;
         justify-content: space-between;
         overflow: hidden;
+
         &:hover{
             & > .menu_card--content{
                 width:70%;
@@ -76,7 +77,7 @@
     }
 
     .price{
-        margin-top: 20px;
+        margin-top: 40px;
     }
     
 
@@ -99,6 +100,7 @@
 
     /*****coeur*////
     
+}
     .heart{
         position: relative;
         margin-left: 20px;
@@ -115,7 +117,7 @@
         opacity: 0;
     
        }
-    }
+    
 
 
     .btn_commande{

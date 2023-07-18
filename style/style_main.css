@@ -4,9 +4,15 @@
   font-weight: normal;
 }
 
-.main {
+.main-menu {
   box-sizing: content-box;
-  width: 100%;
+  background-color: #F6F6F6;
+}
+@media (min-width: 967px) {
+  .main-menu {
+    background-color: white;
+    margin-bottom: -40px;
+  }
 }
 
 a {
@@ -113,8 +119,9 @@ footer .footer_content--icon {
   height: 1.5em;
   position: absolute;
   left: -0.6em;
-  top: 1.8em;
+  top: 1.6em;
   justify-content: center;
+  padding-top: 3px;
 }
 .fonctionnement_content--box--img {
   color: #7E7E7E;
@@ -205,6 +212,15 @@ p {
     width: 40%;
   }
 }
+.restaurant .restaurant_card--img--new {
+  background-color: #99E2D0;
+  color: #008766;
+  position: relative;
+  padding: 5px;
+  top: -230px;
+  right: -75%;
+  border-radius: 2px;
+}
 .restaurant .restaurant_card .image {
   -o-object-fit: cover;
      object-fit: cover;
@@ -226,8 +242,11 @@ p {
 .restaurant .restaurant_card--content--text--subtitle {
   margin-top: 5px;
 }
-.restaurant .restaurant_card--content--heart {
-  margin: 10px 20px 0px 0px;
+
+.heart-index {
+  position: relative;
+  top: 20px;
+  right: 50px;
 }
 
 .photo_restaurant {
@@ -262,8 +281,8 @@ p {
 }
 @media (min-width: 967px) {
   .menu_radius {
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 280px;
+    margin-right: 280px;
   }
 }
 
@@ -311,7 +330,7 @@ p {
   overflow: hidden;
 }
 .menu .price {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .menu .fa-circle-check {
   color: white;
@@ -321,16 +340,19 @@ p {
   top: 30px;
   font-size: 20px;
 }
-.menu .heart {
+
+.heart {
   position: relative;
   margin-left: 20px;
   top: -12px;
 }
-.menu .fa-heart {
+
+.fa-heart {
   position: absolute;
   font-size: 25px;
 }
-.menu .full-heart {
+
+.full-heart {
   opacity: 0;
 }
 
@@ -516,11 +538,4 @@ p {
   100% {
     width: 80px;
   }
-}
-/* reste :
-
-
-
-- trouver solution au bande blanche en bas 
-
-- *//*# sourceMappingURL=style_main.css.map */
+}/*# sourceMappingURL=style_main.css.map */

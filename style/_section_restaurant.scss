@@ -23,7 +23,18 @@
         margin: auto; 
         @media (min-width:967px) {
             width: 40%;
-        }      
+        } 
+        
+        &--img--new{
+            background-color: $third-color;
+            color: #008766;
+            position: relative;
+            padding: 5px;
+            top: -230px;
+            right: -75%;
+            border-radius: 2px;
+        }
+        
 
         .image{
             object-fit: cover;
@@ -45,10 +56,14 @@
                     margin-top: 5px;
                 } 
             }
-            &--heart{
-                margin:10px 20px 0px 0px;
-            }
+            
         }
         
     }
+}
+
+.heart-index {
+    position: relative;
+    top: 20px;
+    right: 50px;
 }
