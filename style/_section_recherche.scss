@@ -36,7 +36,7 @@ p{
         box-shadow: 2px 2px 4px grey;
         cursor: pointer;
         &:hover{
-            background: linear-gradient(
+           background: linear-gradient(
                         356deg,
                         lighten($main-color, 5%) 0%,
                          lighten($second-color, 5%)80%,
